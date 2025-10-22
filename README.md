@@ -180,9 +180,38 @@ From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5
 Typical Setup ->
 Launch Configuration Wizard (after install) ->
 Standard Configuration ->
-Username: root
-Password: root
+<b>Username: root
+Password: root</b>
 
 <img width="1012" height="850" alt="image" src="https://github.com/user-attachments/assets/db46052a-e26e-4938-b119-4e6a109f9c1a" />
 <img width="738" height="614" alt="image" src="https://github.com/user-attachments/assets/9a26fd12-7f1e-4577-abc8-97ceb70111e7" />
+<hr style="width:100%;">
+
+Open IIS as an Admin<p>
+Type IIS in the start menu and select "Run as Admin"
+<img width="1040" height="753" alt="image" src="https://github.com/user-attachments/assets/c56876e8-290a-4e55-8c5e-5b194d36df5d" />
+<hr style="width:100%;">
+
+Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
+<img width="1161" height="808" alt="image" src="https://github.com/user-attachments/assets/fb945658-2f79-4542-a314-24e2c0219c09" />
+<hr style="width:100%;">
+
+Reload IIS (Open IIS, Stop and Start the server)<p>
+Select "Stop" and then "Start" to restart the server
+<img width="1474" height="550" alt="image" src="https://github.com/user-attachments/assets/772df6b9-bd65-4a74-961b-8bb2f8126b0e" />
+<hr style="width:100%;">
+
+Install osTicket v1.15.8
+From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”
+Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”
+<img width="1456" height="924" alt="image" src="https://github.com/user-attachments/assets/041aead1-d659-4640-bec6-a3a6966dd229" />
+<hr style="width:100%;">
+
+Reload IIS (Open IIS, Stop and Start the server)
+<img width="1465" height="791" alt="image" src="https://github.com/user-attachments/assets/7f63821e-4e04-41ee-887a-620aced5cbd4" />
+<hr style="width:100%;">
+
+Go to sites -> Default -> osTicket
+On the right, click “Browse *:80”
+
 <hr style="width:100%;">
