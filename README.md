@@ -150,6 +150,39 @@ You can access the osTicket Installation Files.zip by pasting (https://docs.goog
 
 Install / Enable IIS in Windows WITH CGI<p>
 World Wide Web Services -> Application Development Features -> [X] CGI<p>
-Access Control Panel > Panel > Panels and Features 
+Access Control Panel > Panel > Panels and Features <p>
+Select IIS (Internet Information Service)  and CGI under (Worldwide Web Services > Application Development Features)
+<img width="648" height="590" alt="image" src="https://github.com/user-attachments/assets/68ef48af-b3d4-42f2-b37c-59ad7f2620de" />
+<hr style="width:100%;">
 
+From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
+<img width="876" height="602" alt="image" src="https://github.com/user-attachments/assets/400e2d9c-c13b-4784-a751-813cba2e8ae7" />
+<hr style="width:100%;">
 
+From the “osTicket-Installation-Files” folder install the Rewrite Module (rewrite_amd64_en-US.msi)
+<img width="892" height="674" alt="image" src="https://github.com/user-attachments/assets/a8a855c0-6cf6-402e-8663-f9902465f155" />
+<hr style="width:100%;">
+
+Create the directory C:\PHP<p>
+Access the (C:) Drive under (File Explorer > This PC) and create a new folder titled "PHP"
+<img width="1176" height="524" alt="image" src="https://github.com/user-attachments/assets/fb8dc028-cc95-4771-bee3-ea9a58b04630" />
+<hr style="width:100%;">
+
+From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder
+<img width="1512" height="938" alt="image" src="https://github.com/user-attachments/assets/ab528491-802d-4e68-a5ff-d80cceaafdb6" />
+<hr style="width:100%;">
+
+From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.
+<img width="1104" height="776" alt="image" src="https://github.com/user-attachments/assets/c36abac2-7ad7-45c4-8732-330fc524f438" />
+<hr style="width:100%;">
+
+From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
+Typical Setup ->
+Launch Configuration Wizard (after install) ->
+Standard Configuration ->
+Username: root
+Password: root
+
+<img width="1012" height="850" alt="image" src="https://github.com/user-attachments/assets/db46052a-e26e-4938-b119-4e6a109f9c1a" />
+<img width="738" height="614" alt="image" src="https://github.com/user-attachments/assets/9a26fd12-7f1e-4577-abc8-97ceb70111e7" />
+<hr style="width:100%;">
